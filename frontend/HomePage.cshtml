@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "HomePage";
+}
+
+<style>
+    body {
+        background-image: url('../../images/bg image11.jpg');
+        background-position: inherit;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    h2,h6, a {
+        color: white;
+    }
+    
+
+    .links {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+</style>
+<h2 style="text-align:center">WELCOME TO ONDEMAND CARWASH SYSTEM</h2>
+
+<div class="links">
+    <h4 style="text-align:center">Get Your Car Washed Right Away</h4>
+    @Html.ActionLink("AdminLogin","LoginUser") <h6>||||</h6>
+    @Html.ActionLink("Login", "LoginUser")<h6>||||</h6>@Html.ActionLink("Register", "Create")
+</div>
+
+
+
+
